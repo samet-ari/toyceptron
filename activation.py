@@ -14,5 +14,5 @@ class Network:
         output = inputs
         for layer in self.layers:
             raw = layer.forward(output) #z=Wx+bias
-            output = [self.activation(x) for x in raw] #On pplique la fonction d'activation à chaque output
+            output = [self.activation(x) for x in raw] #On applique la fonction d'activation à chaque output
         return output                                  # for layer in self.layers: on avait deja defini dans la classe layer
